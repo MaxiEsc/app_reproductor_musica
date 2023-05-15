@@ -42,6 +42,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/reproducir"
+        android:onClick="PlayPause"
         android:textColorHighlight="@color/white"
         android:textColorLink="#DAF3ECEC"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,6 +60,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/detener"
+        android:onClick="Stop"
         android:textColorHighlight="@color/white"
         android:textColorLink="#DAF3ECEC"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +77,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/no_repetir"
+        android:background="@drawable/repetir"
+        android:onClick="Repetir"
         android:textColorHighlight="@color/white"
         android:textColorLink="#DAF3ECEC"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,12 +90,14 @@
 
     <Button
         android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/anterior"
+        android:onClick="Retroceder"
         android:textColorHighlight="@color/white"
         android:textColorLink="#DAF3ECEC"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,6 +115,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/siguiente"
+        android:onClick="Siguiente"
         android:textColorHighlight="@color/white"
         android:textColorLink="#DAF3ECEC"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -117,6 +123,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgV"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.168"
+        app:rippleColor="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
